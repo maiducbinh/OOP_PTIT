@@ -160,7 +160,7 @@ public class Main extends javax.swing.JFrame {
             if (row >= 0 && row < tbXuong.getRowCount()) {
                 Xuong x = new Xuong(Integer.parseInt(maX.getText()),
                         tenX.getText(), Integer.parseInt(hesoX.getSelectedItem().toString()));
-                list2.add(x);
+                list2.set(row, x);
                 tmX.removeRow(row);
                 tmX.insertRow(row, x.toObject());
             } else {
